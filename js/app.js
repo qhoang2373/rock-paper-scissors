@@ -20,6 +20,7 @@ const resultDisplayEl = document.querySelector
 ('#result-display')
     // 3 button DOM references for rock, paper, scissors
 
+
 /*-------------- Functions --------------*/
 // 4) handle player click
 // handle generating random selections for the computer player
@@ -36,3 +37,16 @@ const resultDisplayEl = document.querySelector
 
 /*----------- Event Listeners -----------*/
 // 5) handle a player clicking a button
+
+document.querySelector('#rock').addEventListener
+('click', play);
+document.querySelector('#paper').addEventListener
+('click', play);
+document.querySelector('#scissors').addEventListener
+('click', play);
+
+// alternate way to add event listeners to all buttons
+// document.quertySelectorAll('button').forEach
+// (function (button) {
+// button.addEventListener('click', play);
+//
